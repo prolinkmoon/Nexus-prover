@@ -4,11 +4,11 @@ This project provides a simple Docker setup to run the [Nexus CLI node](https://
 
 > - ✅ No need to install Ubuntu WSL or VM on your Device.
 > - ✅ No need to install Rust or compile from source — just use Docker.
-
+> - ✅ Work with all OS
 ---
 
 ## Download Docker Desktop
-Download from official [Docker]() website, and install. 
+Download from official [Docker](https://www.docker.com/products/docker-desktop/) website, and Install like your fav game :0
 
 
 ---
@@ -24,19 +24,26 @@ Download from official [Docker]() website, and install.
 
 ## 🚀 Quick Start
 
-### 1. Download Dockerfile and build the image
+note: `I tried it on windows 10`
+
+### 1. Open your Docker & Terminal
+![Docker](https://i.postimg.cc/bv41WxKp/Screenshot-1361.png)
+
+### 2. Create nexus folder, Download Dockerfile and build the image
 
 ```shell
-mkdir nexus && cd nexus && wget 
-git clone https://github.com/your-username/nexus-docker.git
-cd nexus-docker
-
-# Build the image
+mkdir nexus; cd nexus; wget https://raw.githubusercontent.com/prolinkmoon/Nexus-prover/main/Dockerfile -OutFile Dockerfile
+```
+Build the image
+```shell
 docker build -t nexus-cli .
 ```
-### 2. Run Nexus CLI node 
+### 3. Run Nexus CLI node 
 ```shell
-
+docker run -it nexus-cli start --node-id <your-node-id>
 ```
+### 4. Stop node, Start node, and Delete Container / Node
+![Docker](https://i.postimg.cc/Y0F3SnBX/Screenshot-1362.png)
+
 
 
