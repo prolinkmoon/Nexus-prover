@@ -45,5 +45,14 @@ docker run -it nexus-cli start --node-id <your-node-id>
 ### 4. Stop node, Start node, and Delete Container / Node
 ![Docker](https://i.postimg.cc/Y0F3SnBX/Screenshot-1362.png)
 
+---
+
+## 👨‍👩‍👦‍👦 Run Multiple node
+
+![Docker](https://i.postimg.cc/QdT2kRyN/Screenshot-1366.png)
+
+> ⚠️ 
+> - 1 nexus CLI node need `~4-6gb RAM`
+> - It's possible to run multiple nodes, provided your device has enough memory.
 
 
